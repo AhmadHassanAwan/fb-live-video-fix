@@ -1,9 +1,9 @@
 {
-    "name": "FBLive Video Fix",
-    "short_name": "FBLive Video Fix",
-    "version": "1",
+    "name": "FBCancel Next Video",
+    "short_name": "FBCancel Next Video",
+    "version": "1.1",
     "manifest_version": 2,
-    "description": "This extension will make the Live videos easily controllable using default HTML5 Video Player Controls..",
+    "description": "This extension will cancel the autoplay of next video while watching in theater mode..",
     "icons": {
       "128": "images/icon-128.png"
     },
@@ -13,18 +13,12 @@
       },
       "default_title": ""
     },
-    "background": {
-      "scripts": [
-        "scripts/jquery-3.2.1.min.js"
-      ]
-    },
     "content_scripts": [
       {
         "matches": [
           "*://*.facebook.com/*"
         ],
         "js": [
-          "scripts/jquery-3.2.1.min.js",
           "scripts/contentscript.js"
         ],
         "css": [
