@@ -1,1 +1,8 @@
-!function(e){"use strict";var r,t=[],n=e.document,l=e.MutationObserver||e.WebKitMutationObserver;function c(){for(var e,r,l=0,c=t.length;l<c;l++){e=t[l];for(var i,o=0,u=(r=n.querySelectorAll(e.selector)).length;o<u;o++)(i=r[o]).ready||(i.ready=!0,e.fn.call(i,i))}}e.ready=function(e,i){t.push({selector:e,fn:i}),r||(r=new l(c)).observe(n.documentElement,{childList:!0,subtree:!0}),c()}}(this),ready("._64gl._2pir._2iel",function(e){document.querySelector("._64gl._2pir._2iel").click()});
+$(document).ready(function(){
+    $("body").on("mouseenter", "._53j5:not(.done)", function(){
+        if ($(this).find("._2wrk").length){
+            $(this).addClass("done");
+            $(this).find("video").attr("controls", true).siblings().remove();
+        }
+    });
+})
